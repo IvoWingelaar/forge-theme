@@ -15,7 +15,7 @@
 <body>
     <nav>
         <a class="branding" href="{{ config.base_url | safe }}">
-            <img src="{{ get_url(path="forge.svg") | safe }}" alt="branding-logo" style="width:4em;">
+            <img src="{{ get_url(path=config.extra.branding_logo_path) | safe }}" alt="branding-logo" style="width:4em;">
             <span>{{ config.title }}</span>
         </a>
 
