@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{% block description %}{{ config.description }}{% endblock description %}">
+    <meta name="author" content="{{ config.extra.author.name }}">
+    {% if current_url %}
+        <link rel="canonical" href="{{ current_url | safe }}" />
+    {% endif %}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans"/>
+    <link rel="stylesheet" href="{{ get_url(path="main.css", cachebust=true) | safe }}"/>
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+</head>
+<body>
+    <nav>
+        <a class="branding" href="{{ config.base_url | safe }}">
+            <img src="{{ get_url(path="forge.svg") | safe }}" alt="branding-logo" style="width:4em;">
+            <span>{{ config.title }}</span>
+        </a>
+
+        {% for item in config.extra.menu %}
+        <a href="{{ item.url | safe }}">{{ item.name }}</a>
+        {% endfor %}
+    </nav>
+
+    {% block toc_aside %}{% endblock toc_aside %}
+
+    {% block hero %}{% endblock hero %}
+
+    <main>{% block main %}{% endblock main %}</main>
+
+    {% block footer %}
+    <footer>
+        <small>
+            Copyright &copy; <time datetime="2021">2021</time> {{ config.extra.author.name }}. All rights reserved.
+        </small>
+        <br>
+        <small>
+            Built with <a href="https://www.getzola.org">Zola</a>.
+        </small>
+    </footer>
+    {% endblock footer %}
+
+    {% if config.extra.katex_enable %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.0/katex.min.css" integrity="sha512-MJmGvrYhgWyFswGuarVFhndqozyLfTRtlbC21mYB+6I1IWvfAuPbEWd38bfQKbrTUb7Jba/bQg/vA9htQu6clQ==" crossorigin="anonymous" />
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.0/katex.min.js" integrity="sha512-RUPvLPAfrnUiXmfqR6xAYlt238VtSE3pOlqlov7LPnk0EAi3U6SvvSLgxNukvwabGjt0F43s0c/rvIZdlD4+Qg==" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.0/contrib/mathtex-script-type.min.js" integrity="sha512-GvqOquKd1WdyEv/5LtAgWfdD90RMhGrSy68HB7MPlpdSLzzjKH/cVQMjCHdRhfOQgxkCLQcKuNptCHIXGxLgNg==" crossorigin="anonymous"></script>
+    {% endif %}
+</body>
+</html>

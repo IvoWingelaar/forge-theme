@@ -1,0 +1,173 @@
+$primary: #2BAE66;
+
+body {
+    @media (max-width: 768px) {
+        font-size: 0.75em;
+    }
+
+    > nav {
+        padding: 1em;
+        border-top: 0.2em solid $primary;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        height: 2.3em;
+    }
+}
+
+h1,h2,h3 {
+    padding-top: 1em;
+    font-weight: 400;
+}
+
+body {
+    font-family: "Nunito Sans", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
+    background-color: #fff;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    min-height: 100vh;
+    min-width: 300px;
+    flex-direction: column;
+}
+
+a.branding {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    height: inherit;
+}
+
+.branding > span {
+    padding-left: 0.4em;
+}
+
+nav > :not(:first-child) {
+    margin-left: 1em;
+}
+
+nav > * {
+    margin: 0.1em 0em;
+}
+
+nav a {
+    color: #000;
+}
+
+nav a img {
+    height: 100%;
+}
+
+nav a:hover {
+    color: $primary;
+}
+
+div.center-vert {
+    display: flex;
+    justify-content: center;
+}
+
+div.equation {
+    margin: auto;
+}
+
+.blog-list {
+    padding-left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.blog-list article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog-list a {
+    color: $primary;
+}
+
+.blog-list li small {
+    padding-left: 1em;
+}
+
+.hero-image {
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.hero {
+    z-index: 30;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: calc(100vh - 4.3em - 0.3em);
+    background-color: $primary;
+    overflow-x: hidden;
+    padding: 0 40px;
+
+    > * {
+        padding: 1em;
+    }
+}
+
+body {
+    > main {
+        flex: 1;
+        margin: 0 auto;
+        max-width: 45em;
+        padding: 1em 0.1em;
+        @media (max-width: 768px) {
+            max-width: 95vw;
+            padding: 1em 1.3em;
+        }
+        background-color: #fff;
+        line-height: 1.4em;
+        box-sizing: border-box;
+    }
+
+    > footer {
+        @media (max-width: 768px) {
+            padding: 1em 1.4em;
+        }
+        padding: 2em 4em 2em;
+
+        background-color: $primary;
+        color: #fff;
+        a {
+            color: #fff;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+}
+
+code {
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    background-color: #eee;
+    padding: 1px 3px;
+}
+
+main h1 {
+    line-height: 1em;
+}
+
+a {
+    color: #3273dc;
+    text-decoration: none;
+}
+
+blockquote {
+    border-left-color: $primary;
+    border-left-style: solid;
+    padding-left: 1em;
+    margin-left: 1em;
+}
+
+pre code {
+    overflow-x: auto;
+    display: block;
+}

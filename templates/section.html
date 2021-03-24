@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block main %}
+<section class="content">
+{{ section.content | safe }}
+</section>
+<section class="content">
+<ul class="blog-list">
+{% for page in paginator.pages %}
+    <li>
+    <article>
+    <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+    <small>{{ page.date }}</small>
+    </article>
+    </li>
+{% endfor %}
+</ul>
+</section>
+{% if paginator.previous %}
+    <a class="previous" href="{{ paginator.previous }}">‹ Previous</a>
+{% endif %}
+{% if paginator.next %}
+    <a class="next" href="{{ paginator.next }}">Next ›</a>
+{% endif %}
+{% endblock main %}
