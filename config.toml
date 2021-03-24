@@ -1,0 +1,19 @@
+base_url = "https://codeforge.rs/projects/forge-theme"
+title = "Forge"
+description = "Forge theme for Zola"
+compile_sass = true
+
+[markdown]
+highlight_code = true
+highlight_theme = "Tomorrow"
+render_emoji = true
+smart_punctuation = true
+
+[extra]
+author = { name = "Ivo C.S. Wingelaar" }
+katex_enable = true
+menu = [
+    {url = "/blog/", name = "Blog"},
+    {url = "/about/", name = "About"},
+    {url = "/contact/", name = "Contact"},
+]

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block hero %}
+<section class="hero">
+    <img class="hero-image" src="{{ get_url(path="forge-inv.svg") | safe }}">
+    <div>
+    <h1>Forge</h1>
+    <p>Forge is a theme for Zola</p>
+    </div>
+</section>
+{% endblock hero %}
+
+{% block main %}
+<section>
+{{ section.content | safe }}
+</section>
+{% endblock main %}
