@@ -1,0 +1,18 @@
+name = "The Forge theme"
+description = "A classic blog theme"
+license = "MIT"
+homepage = "https://github.com/IvoWingelaar/forge-theme"
+min_version = "0.13.0"
+demo = "https://forge-theme.wingelaar.be/"
+
+[extra]
+katex_enable = true
+menu = [
+    {url = "/blog/", name = "Blog"},
+    {url = "/about/", name = "About"},
+    {url = "/contact/", name = "Contact"},
+]
+
+[author]
+name = "Ivo C.S. Wingelaar"
+homepage = "https://wingelaar.be"
