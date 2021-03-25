@@ -176,5 +176,18 @@ pre code {
 .zola-anchor {
     position: absolute;
     color: $primary;
+}
+
+h1 > .zola-anchor {
     left: -1em;
+    &::before {
+        content: "#";
+    }
+}
+
+h2 > .zola-anchor {
+    left: -1.6em;
+    &::before {
+        content: "##";
+    }
 }
