@@ -190,4 +190,11 @@ h2 > .zola-anchor {
     &::before {
         content: "##";
     }
+
+    @media (max-width: 768px) {
+        left: -1em;
+        &::before {
+            content: "#";
+        }
+    }
 }
