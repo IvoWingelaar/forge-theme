@@ -2,6 +2,7 @@
     --primary-color: #2E709E;
     --link-on-primary-color: #FDF157;
     --link-color: #DA320A;
+    --blockquote-background: #F2FBFD;
 }
 
 body {
@@ -187,8 +188,9 @@ a {
 blockquote {
     border-left-color: var(--primary-color);
     border-left-style: solid;
-    padding-left: 1em;
-    margin-left: 1em;
+    background-color: var(--blockquote-background);
+    margin: 0 0;
+    padding: 0.1em 1em;
 }
 
 pre code {
