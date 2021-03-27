@@ -1,5 +1,7 @@
 :root {
     --primary-color: #2E709E;
+    --link-on-primary-color: #FDF157;
+    --link-color: #DA320A;
 }
 
 body {
@@ -55,6 +57,8 @@ nav > * {
 
 nav a {
     color: #000;
+    text-decoration: none;
+    font-weight: normal;
 }
 
 nav a img {
@@ -114,6 +118,11 @@ div.equation {
     flex-wrap: wrap;
     align-content: center;
 
+    a {
+        color: var(--link-on-primary-color);
+        font-weight: bold;
+    }
+
     h1 {
         padding-top: 0;
         margin-top: 0;
@@ -152,7 +161,7 @@ body {
         background-color: var(--primary-color);
         color: #fff;
         a {
-            color: #fff;
+            color: var(--link-on-primary-color);
             font-weight: bold;
             text-decoration: underline;
         }
@@ -171,8 +180,8 @@ main h1 {
 }
 
 a {
-    color: #3273dc;
-    text-decoration: none;
+    color: var(--link-color);
+    font-weight: 600;
 }
 
 blockquote {
