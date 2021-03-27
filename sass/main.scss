@@ -1,4 +1,6 @@
-$primary: #2BAE66;
+:root {
+    --primary-color: #2E709E;
+}
 
 body {
     @media (max-width: 768px) {
@@ -7,7 +9,7 @@ body {
 
     > nav {
         padding: 1em;
-        border-top: 0.2em solid $primary;
+        border-top: 0.2em solid var(--primary-color);
         display: flex;
         align-items: center;
         background-color: #fff;
@@ -60,7 +62,7 @@ nav a img {
 }
 
 nav a:hover {
-    color: $primary;
+    color: var(--primary-color);
 }
 
 div.center-vert {
@@ -86,7 +88,7 @@ div.equation {
 }
 
 .blog-list a {
-    color: $primary;
+    color: var(--primary-color);
 }
 
 .blog-list li small {
@@ -106,7 +108,7 @@ div.equation {
     align-items: center;
     justify-content: space-evenly;
     min-height: calc(100vh - 4.3em - 0.2em);
-    background-color: $primary;
+    background-color: var(--primary-color);
     overflow-x: hidden;
     padding: 0 40px;
     flex-wrap: wrap;
@@ -147,7 +149,7 @@ body {
         }
         padding: 2em 4em 2em;
 
-        background-color: $primary;
+        background-color: var(--primary-color);
         color: #fff;
         a {
             color: #fff;
@@ -174,7 +176,7 @@ a {
 }
 
 blockquote {
-    border-left-color: $primary;
+    border-left-color: var(--primary-color);
     border-left-style: solid;
     padding-left: 1em;
     margin-left: 1em;
@@ -187,7 +189,7 @@ pre code {
 
 .zola-anchor {
     position: absolute;
-    color: $primary;
+    color: var(--primary-color);
 }
 
 h1 > .zola-anchor {
