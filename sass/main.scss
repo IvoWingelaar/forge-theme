@@ -228,3 +228,13 @@ h2 > .zola-anchor {
         }
     }
 }
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    a {
+        color: var(--link-color);
+        font-weight: 600;
+        text-decoration: underline;
+    }
+}
