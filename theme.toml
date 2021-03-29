@@ -3,7 +3,7 @@ description = "A classic blog theme"
 license = "MIT"
 homepage = "https://github.com/IvoWingelaar/forge-theme"
 min_version = "0.13.0"
-demo = "https://codeforge.rs/projects/forge-theme"
+demo = "https://forge-theme.codeforge.rs/"
 
 [extra]
 katex_enable = true
