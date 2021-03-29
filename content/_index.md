@@ -1,46 +1,35 @@
 +++
 +++
 
-# The Forge theme for Zola
+# Forge: a theme for Zola
 
-Text.
+# Usage
 
-# Moraque coniugium aquas regia Melicerta flumine egi
+Download this theme to the `themes` directory of the [Zola](https://getzola.org) website:
 
-## Et ipsa corpora Iovis sollemni
-
-Lorem markdownum et sermo cortex, posuerunt corpus condas toto: repagula
-officium. Urbs iam: qui dum pacis ferocia muneris est, o omnibus. Pectore
-accipio caeruleus fulmineos: compos madentes iussum maerentes, motis spreta
-quoque vobis, rustice quod.
-
-```rust
-for i in 0..1 {
-    println!("{:?}", statement);
-}
-
-struct Abc {
-    i: i32,
-    j: f32,
-}
-
-impl TraitName for Abc {
-    // TODO: fill me in
-}
+```bash
+$ pwd
+/path/to/your/website
+$ cd themes
+$ git clone https://github.com/IvoWingelaar/forge-theme.git
 ```
 
-Sine ait; armiferos quasi: te *notus*, mea illa sors gratulor. Tempora super
-armentis, esse vox adspergine sola iamdudum penates semel et in quae auditi
-nostrae.
+Select the theme for use by adding the following to the `config.toml` file:
+```toml
+theme = "forge-theme"
+```
 
-## Tergoque in guttura summo astra dixit per
+# Mathematics
 
-Haberi contingat ab non perfectaque cara trahit super fortibus, priscum canor
-cupiens atque *domi* diruerent, pectore. Superest cum quod [Achivi tibi
-pace](http://prohibentefinierat.net/vade-mihi) Cyllenius armiferae nam plumae,
-nostrumque nulla? Tandemque meruisse ei crus! Cognosceret caespite **et illo**
-digna [nec dixit](http://www.super-cuius.io/iamque.aspx), vos et maritum
-Aesonides, nautae quo lumina.
+To enable support for mathematical typesetting with [KaTeX](https://katex.org), add the following to the `config.toml` file:
+
+```toml
+[extra]
+katex_enable = true
+```
+
+You can then use the `katex()` shortcode to render KaTeX code in your Markdown files.
+Marvel upon this majestic proof of a simple algebraic expression:
 
 {% katex(reserve="16em") %}
 \begin{aligned}
@@ -53,19 +42,18 @@ Aesonides, nautae quo lumina.
 \end{aligned}
 {% end %}
 
-Emissi nondum; ab Eueninae non **est finge** iuga Desierat nec. Premit tamen hic
-paterna equorum ad Peleus, fuit usus altis ensem ut fulmen; dignus. Tenos
-thalamos hauriret ingens abditus, in parte infelix, ergo meas, iam in eiusdem et
-faciem dabitis. Fert rapit monitisque tota spectari di atque deriguere cedemus
-Elin dummodo totum, loricamque tempora dolor scrobibus *canunt* consumptaque.
+To prevent content layout shift while KaTeX is loading on slower connections, the `katex()` shortcode allows you to reserve vertical space on your page.
+This space should be slightly larger than the actual required space as the rendered output is centered inside the block reserved by the shortcode and will expand if the reserved space is too small, resulting in the content layout shift we are trying to avoid.
 
-Nec fulmine quoque **classis si** hosti comitantiaque alas deceperat puppim; sub
-ullo, tota nostra, effecta Inoo. Quid aedes scelerata capillos praereptae vires
-eurytus resonant laqueoque fidelem illis! Quercus canum futuros. Ecce pietas
-subdit: mea nec labe ingens petis. Nunc tosta positasque quasi [semineces
-verba](http://latum.com/percutiens-alumnus) de petiere descendere est, deus
-sanguine tamen ex ardet?
+```
+{%/* katex(reserve="16em") */%}
+// insert KaTeX code here, 16 em vertical space will be reserved.
+{%/* end */%}
+```
 
-At homo, libet *duc*. Colorem in inmania, foramen poplite amor donec significat,
-progenies. Dixit te sparsas altera; trahit clausa regni, luet. Illi relicto
-proles felicesque saecula fisa.
+# Future work
+
+- Progressive enhancement with an dynamic table of content floating next to blog articles.
+- More customization support.
+
+# License
