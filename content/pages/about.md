@@ -1,6 +1,6 @@
 +++
 path = "about"
-template = "about.html"
+title = "About"
 +++
 
 # Advehor Teuthranteusque fugiebant latratibus insidiisque messis

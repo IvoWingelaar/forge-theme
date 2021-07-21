@@ -3,6 +3,7 @@ sort_by = "date"
 title = "Blog"
 paginate_by = 3
 insert_anchor_links = "right"
+page_template = "blog/page.html"
 +++
 
 # Sis patrem praebuit in numina tamen

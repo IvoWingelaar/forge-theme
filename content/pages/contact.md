@@ -1,6 +1,6 @@
 +++
-template = "contact.html"
 path = "contact"
+title = "Contact"
 +++
 
 # Sortes fugit fragmina Pandioniae velle mora Lucifer

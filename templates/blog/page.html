@@ -1,11 +1,8 @@
-{% extends "base.html" %}
-
-{% block title %}
-{{ page.title }} - {{ config.title }}
-{% endblock title %}
+{% extends "page.html" %}
 
 {% block main %}
 <h1>{{ page.title }}</h1>
+<h2>Written on {{ page.date }} by {{ page.extra.author }}</h2>
 <section class="content">
 {{ page.content | safe }}
 </section>
