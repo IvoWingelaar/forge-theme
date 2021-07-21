@@ -2,7 +2,7 @@
 sort_by = "date"
 title = "Blog"
 paginate_by = 3
-insert_anchor_links = "left"
+insert_anchor_links = "right"
 +++
 
 # Sis patrem praebuit in numina tamen
