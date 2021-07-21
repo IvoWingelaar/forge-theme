@@ -10,7 +10,7 @@
     <li>
     <article>
     <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
-    <small>{{ page.date }}</small>
+    <time datetime="{{ page.date }}">{{ page.date }}</time>
     </article>
     </li>
 {% endfor %}
