@@ -1,5 +1,5 @@
 +++
-title = "Four - longer title to check wrapping"
+title = "Four"
 date = 2021-01-04
 [extra]
 author = "Ivo Wingelaar"
