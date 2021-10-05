@@ -6,7 +6,7 @@ min_version = "0.13.0"
 demo = "https://forge-theme.wingelaar.be/"
 
 [extra]
-katex_enable = true
+katex = true
 menu = [
     {url = "/blog/", name = "Blog"},
     {url = "/about/", name = "About"},

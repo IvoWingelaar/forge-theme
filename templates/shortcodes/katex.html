@@ -1,4 +1,4 @@
-<div class="center-vert" style="min-height: {{ reserve }};">
+<div class="center-vert" {% if reserve %}style="min-height: {{ reserve }};"{% endif %}>
 <script type="math/tex;mode=display">
 {{ body | safe }}
 </script>

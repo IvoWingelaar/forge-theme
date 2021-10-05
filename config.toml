@@ -12,7 +12,7 @@ smart_punctuation = true
 
 [extra]
 author = { name = "Ivo C.S. Wingelaar" }
-katex_enable = true
+katex = true
 menu = [
     {url = "/blog/", name = "Blog"},
     {url = "/about/", name = "About"},
