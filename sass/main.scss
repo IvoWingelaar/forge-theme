@@ -44,10 +44,11 @@ a.branding {
     align-items: center;
     font-weight: 600;
     height: inherit;
+    padding-left: 1em;
 }
 
 .branding > span {
-    padding-left: 0.4em;
+    padding-left: 1em;
 }
 
 nav > :not(:first-child) {
@@ -65,7 +66,7 @@ nav a {
 }
 
 nav a img {
-    height: 100%;
+    max-height: 100%;
 }
 
 nav a:hover {

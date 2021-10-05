@@ -18,6 +18,6 @@ menu = [
     {url = "/about/", name = "About"},
     {url = "/contact/", name = "Contact"},
 ]
-branding_logo_path = "forge.svg"
+branding_logo_path = "forge-bar.png"
 hero_logo = "forge-inv.svg"
 hero_content = "hero.dnr.md"
