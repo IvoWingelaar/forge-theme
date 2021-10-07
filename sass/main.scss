@@ -217,9 +217,7 @@ pre code {
     text-decoration: none;
     color: var(--primary-color);
     padding-left: 0.5em;
-    &::after {
-        content: "#";
-    }
+    font-weight: initial;
 }
 
 :hover > .anchor {
