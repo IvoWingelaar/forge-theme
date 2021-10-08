@@ -12,7 +12,7 @@ body {
         font-size: 0.75em;
     }
 
-    > nav {
+    > header > nav {
         padding: 1em;
         border-top: 0.2em solid var(--primary-color);
         display: flex;
@@ -149,17 +149,21 @@ div.equation {
 
 body {
     > main {
+        box-sizing: border-box;
+        flex: 1;
+    }
+
+    > main > :not(.hero) {
         flex: 1;
         margin: 0 auto;
-        width: 43em;
-        padding: 1em 0.1em;
+        width: 43rem;
         @media (max-width: 768px) {
             width: 95vw;
-            padding: 1em 1.3em;
+            padding: 1rem 1.3rem;
+            box-sizing: border-box;
         }
         background-color: #fff;
         line-height: 1.5;
-        box-sizing: border-box;
     }
 
     > footer {

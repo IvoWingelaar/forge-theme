@@ -12,6 +12,7 @@
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
 </head>
 <body>
+    <header>
     <nav>
         <a class="branding" href="{{ config.base_url | safe }}">
             <img src="{{ get_url(path=config.extra.branding_logo_path) | safe }}" alt="branding-logo">
@@ -22,10 +23,9 @@
         <a href="{{ item.url | safe }}">{{ item.name }}</a>
         {% endfor %}
     </nav>
+    </header>
 
     {% block toc_aside %}{% endblock toc_aside %}
-
-    {% block hero %}{% endblock hero %}
 
     <main>{% block main %}{% endblock main %}</main>
 
