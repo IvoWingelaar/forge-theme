@@ -1,0 +1,20 @@
+{% extends "page.html" %}
+
+{% block main %}
+<h1>{{ page.title }}</h1>
+<section class="content">
+{{ page.content | safe }}
+</section>
+<section class="projects">
+{% set projects = load_data(path="@" ~ current_path ~ "projects.toml")%}
+{% for data in projects.projects %}
+<section class="project-tile">
+    <header>
+        <img src={{ data.img }}></img>
+        <h1>{{ data.title }}</h1>
+    </header>
+    <p>{{ data.summary }}</p>
+</section>
+{% endfor %}
+</section>
+{% endblock main %}

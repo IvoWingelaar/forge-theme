@@ -250,3 +250,43 @@ pre code {
         text-decoration: underline;
     }
 }
+
+main > section.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    width: unset;
+
+    margin: 1em auto;
+    padding: 0 2em;
+    max-width: 73em;
+}
+
+section.project-tile {
+    background-color: var(--blockquote-background);
+    border-bottom-color: var(--primary-color);
+    border-bottom-style: solid;
+    border-radius: 0.2em;
+
+    width: 24em;
+    min-width: 24em;
+    height: 9em;
+    padding: 1em;
+
+    > header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        > img {
+            width: 3em;
+            height: 3em;
+        }
+
+        > h1 {
+            margin: 0 1em;
+            padding: unset;
+        }
+    }
+}

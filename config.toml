@@ -15,6 +15,7 @@ author = { name = "Ivo C.S. Wingelaar" }
 katex = true
 menu = [
     {url = "/blog/", name = "Blog"},
+    {url = "/projects/", name = "Projects"},
     {url = "/about/", name = "About"},
     {url = "/contact/", name = "Contact"},
 ]
