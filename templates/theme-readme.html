@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block main %}
+<section class="hero">
+    <img class="hero-image" src="{{ get_url(path=config.extra.hero_logo) | safe }}">
+    <div>{{ load_data(path="content/" ~ config.extra.hero_content) | markdown(inline=true) | safe }}</div>
+</section>
+<section>
+{{ load_data(path="README.md") | markdown(inline=true) | safe }}
+</section>
+{% endblock main %}
