@@ -3,8 +3,6 @@ path = "contact"
 title = "Contact"
 +++
 
-# Sortes fugit fragmina Pandioniae velle mora Lucifer
-
 ## Duo illo et ingens dubitatis
 
 Lorem markdownum virgo: abundet threicius poteras quantumque lumina in aequoreo!

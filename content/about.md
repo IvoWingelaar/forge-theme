@@ -3,8 +3,6 @@ path = "about"
 title = "About"
 +++
 
-# Advehor Teuthranteusque fugiebant latratibus insidiisque messis
-
 ## Ipsi inquit
 
 **Lorem markdownum** solus. Illa Marte!
