@@ -1,8 +1,0 @@
-{% set collocated_path = page.path ~ path %}
-
-<div class="collocate_js" id="collocate_js_{{ nth }}">
-    {% if nth == 1 %}
-    <script src="{{ get_url(path=collocated_path) | safe }}"></script>
-    {% endif %}
-    <script>collocate_js({{ nth }});</script>
-</div>

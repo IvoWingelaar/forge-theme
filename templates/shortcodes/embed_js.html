@@ -1,0 +1,8 @@
+{% set local_path = page.path ~ path %}
+
+<div class="local_js" id="local_js_{{ nth }}">
+    {% if nth == 1 %}
+    <script src="{{ get_url(path=local_path) | safe }}"></script>
+    {% endif %}
+    <script>embed_js({{ nth }});</script>
+</div>

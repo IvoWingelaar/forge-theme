@@ -7,10 +7,10 @@ author = "Ivo Wingelaar"
 
 Text
 
-{% collocate_js(path="collocated.js") %}
+{% embed_js(path="local.js") %}
 ABC
 {% end %}
 
-{% collocate_js(path="collocated.js") %}
+{% embed_js(path="local.js") %}
 DEF
 {% end %}
