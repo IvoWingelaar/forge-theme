@@ -1,9 +1,12 @@
 {% extends "page.html" %}
 
 {% block main %}
+<article>
+<header>
 <h1>{{ page.title }}</h1>
-<h2>Written on {{ page.date }} by {{ page.extra.author }}</h2>
-<section class="content">
+<p>Written by {{ page.extra.author }}</p>
+<p>Published on <time datetime="{{ page.date }}">{{ page.date | date(format="%B %-d, %Y") }}</time></p>
+</header>
 {{ page.content | safe }}
-</section>
+</article>
 {% endblock main %}

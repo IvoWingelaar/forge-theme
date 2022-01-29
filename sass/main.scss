@@ -194,6 +194,23 @@ body {
     }
 }
 
+main > article > header {
+    border-bottom-color: var(--primary-color);
+    border-bottom-style: solid;
+    padding-bottom: 0.5em;
+    margin-bottom: 3em;
+
+    p {
+        margin: 0em;
+        color: #444;
+    }
+
+    h1 {
+        font-size: 3.1em;
+        font-weight: 300;
+    }
+}
+
 code {
     border: 1px solid #e8e8e8;
     border-radius: 3px;
