@@ -89,7 +89,6 @@ This space should not be smaller than the actual required space as the rendered 
 
 ## Future work
 
-- Progressive enhancement with an dynamic table of content floating next to blog articles.
 - More customization support.
 
 ## License
