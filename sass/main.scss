@@ -225,6 +225,10 @@ main > aside {
             font-weight: normal;
             text-decoration: none;
         }
+
+        li.active > a {
+            font-weight: bold;
+        }
     }
 
     opacity: 0.3;

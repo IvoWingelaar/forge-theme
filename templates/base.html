@@ -10,6 +10,8 @@
     {% endif %}
     <link rel="stylesheet" href="{{ get_url(path="main.css") | safe }}"/>
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+    {% block scripts %}
+    {% endblock scripts %}
 </head>
 <body>
     <header>
