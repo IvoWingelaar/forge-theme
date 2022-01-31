@@ -5,6 +5,7 @@
     --link-on-primary-color: #FDF157;
     --link-color: #DA320A;
     --blockquote-background: #F2FBFD;
+    --toc-width: 22rem;
 }
 
 body {
@@ -209,6 +210,38 @@ main > article > header {
         font-size: 3.1em;
         font-weight: 300;
     }
+}
+
+main > aside {
+    @media (max-width: calc(43rem + 2*25rem + 2rem)) {
+        display: none;
+    }
+
+    > ul {
+        overflow-y: auto;
+        height: calc(100vh - 20em);
+
+        a {
+            font-weight: normal;
+            text-decoration: none;
+        }
+    }
+
+    opacity: 0.3;
+    transition: opacity 0.4s;
+
+    position: sticky;
+    top: 3em;
+    left: calc((100vw - 43rem) / 2 - 25rem);
+    float: left;
+    width: var(--toc-width) !important;
+    margin-top: 10em !important;
+
+    font-size: 0.8em;
+}
+
+main > aside:hover {
+    opacity: 1.0;
 }
 
 code {
