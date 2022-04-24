@@ -164,6 +164,10 @@ body {
     > main {
         box-sizing: border-box;
         flex: 1;
+
+        > article {
+            margin-bottom: 10em !important;
+        }
     }
 
     > main > :not(.hero) {
