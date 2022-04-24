@@ -1,5 +1,15 @@
 {% extends "page.html" %}
 
+{% block extra_css %}
+{% set css_path = page.path ~ "style.css" %}
+{% set extra_css = load_data(path=css_path, required=false) %}
+{% if extra_css %}
+<style type="text/css">
+{{ extra_css | safe }}
+</style>
+{% endif %}
+{% endblock extra_css %}
+
 {% block main %}
 {% if page.toc %}
 <aside>
