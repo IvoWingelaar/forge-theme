@@ -195,6 +195,12 @@ body {
     }
 }
 
+article > p > img {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+}
+
 main > article > header {
     border-bottom-color: var(--primary-color);
     border-bottom-style: solid;
