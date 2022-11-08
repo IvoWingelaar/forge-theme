@@ -36,7 +36,8 @@
     {% block footer %}
     <footer>
         <small>
-            Copyright &copy; <time datetime="2021">2021</time> {{ config.extra.author.name }}. All rights reserved.
+            {% set current_year = now() | date(format="%Y") %}
+            Copyright &copy; <time datetime="{{ current_year }}">{{ current_year }}</time> {{ config.extra.author.name }}. All rights reserved.
         </small>
         <br>
         <small>
